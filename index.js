@@ -1,24 +1,8 @@
-const axios = require('axios');
-const ExcelJS = require('exceljs');
-const fs = require('fs');
+const GetDatag = require('./appi.js')
 
-// API URL in a variable    
-const API_URL = 'https://jsonplaceholder.typicode.com/posts/1';
+function app (){
 
-// Nombre del archivo Excel
-const FILE_NAME = 'datos_api.xlsx';
-
-async function adquireData(params) {
- try {
-    // 1. Obtener datos desde la API
-    const response = await axios.get(API_URL);
-    console.log(response.data)
-
-      } catch (error) {
-    console.error('❌ Error:', error.message);
-  }
-    
+    GetDatag();
 }
 
-adquireData();
-
+app();
