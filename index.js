@@ -1,8 +1,18 @@
-const GetDatag = require('./appi.js')
+const axios = require('axios');
+const escribirEnSheet = require('Excelsheet.js');
+const datahere = require('./appi.js')
 
-function app (){
+const API_URL = 'https://api.ejemplo.com/datos';
 
-    GetDatag();
-}
+// async function main() {
 
-app();
+
+//     console.log(datahere);
+
+//   // Convertir datos a formato para Google Sheets
+// //   const values = data.map(item => Object.values(item));
+
+// //   await escribirEnSheet(values);
+// }
+
+

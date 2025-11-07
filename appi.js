@@ -20,4 +20,5 @@ async function adquireData(params) {
     
 }
 
+adquireData();
 module.exports = adquireData;
